@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Red+Hat+Display:wght@500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+} body {
+    background: #000;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.65;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    margin: 2rem auto;
+    max-width: min(770px, 100% - 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+} section {
+    margin-top: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+} button {
+    width: fit-content;
+    font-family: 'Luckiest Guy', sans-serif;
+    padding: 0.5rem 3rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.title {
+    width: fit-content;
+    user-select: none;
+    rotate: -10deg;
+    color: #282828;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    transition: all 200ms;
+    font-weight: lighter;
+} .title:hover {
+    letter-spacing: 10px;
+}
+
+.jokes-container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#jokes-text-1::before {
+    content: '— ';
+    color: #999;
+}
